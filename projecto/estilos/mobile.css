@@ -1,0 +1,25 @@
+@charset"UTF-8";
+
+main {
+      background: linear-gradient(to top, rgb(4, 4, 34), rgb(1, 1, 8));
+}
+main p {
+    font-weight: bold;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    line-height: 1em;
+    color: rgba(255, 255, 255, 0.904);
+}
+
+span {
+    color: yellow;
+}
+
+img {
+    display: flex;
+    padding: 10px;
+    width: 90%;
+    box-shadow: 1px 1px 10px 1px yellow;
+    margin: auto;
+}

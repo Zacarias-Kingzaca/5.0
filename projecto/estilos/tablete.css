@@ -1,0 +1,43 @@
+@charset"UTF-8";
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    padding:20px;
+    background-color: rgba(128, 128, 128, 0.658);
+    border: 2px dashed blue;
+}
+section.sec {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  article.art {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+main {
+    background: linear-gradient(to top, rgb(4, 4, 34), rgb(1, 1, 8));
+}
+main p {
+  font-weight: bold;
+  font-size: 2em;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1em;
+  color: rgba(255, 255, 255, 0.904);
+}
+
+span {
+  color: yellow;
+}
+
+img {
+  display: flex;
+  padding: 10px;
+  width: 90%;
+  box-shadow: 1px 1px 10px 1px yellow;
+  margin: auto;
+}
+
