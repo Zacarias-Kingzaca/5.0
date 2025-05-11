@@ -1,24 +1,24 @@
 @charset"UTF-8";
 
 main {
-    display: flex;
-    flex-flow: column nowrap;
     padding:20px;
     background-color: rgba(128, 128, 128, 0.658);
-    border: 2px dashed blue;
+    background: linear-gradient(to top, rgb(4, 4, 34), rgb(1, 1, 8));
 }
-section.sec {
-    flex-direction: column;
-    align-items: start;
-  }
 
   article.art {
-    flex: 1 1 100%;
-    width: 100%;
+    border: 2px dashed blue;
   }
 
-main {
-    background: linear-gradient(to top, rgb(4, 4, 34), rgb(1, 1, 8));
+  article#art1 {
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;  
+  }
+
+article#art1 > div {
+  display: flex;
+  justify-content: space-between;
+
 }
 main p {
   font-weight: bold;
@@ -36,7 +36,6 @@ span {
 img {
   display: flex;
   padding: 10px;
-  width: 90%;
   box-shadow: 1px 1px 10px 1px yellow;
   margin: auto;
 }
