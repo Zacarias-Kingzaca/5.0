@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Colunas e cards</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+
+        .servicos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .card {
+            flex: 1 1 calc(25% - 1rem);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0.1);
+        }
+
+        .card img{
+            max-width: 40%;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <section class="servico">
+        
+    <div class="card">
+        <img src="img/IMG-20250513-WA0005.jpg" alt="">
+         <h3>Serviço 1</h3>
+        <p>Descrição do Serviço 1</p>
+    </div>
+
+    <div class="card">
+        <img src="img/IMG-20250513-WA0005.jpg" alt="">
+         <h3>Serviço 2</h3>
+        <p>Descrição do Serviço 2</p>
+    </div>
+
+    <div class="card">
+        <img src="img/IMG-20250513-WA0005.jpg" alt="">
+         <h3>Serviço 3</h3>
+        <p>Descrição do Serviço 3</p>
+    </div>
+
+    <div class="card">
+        <img src="img/IMG-20250513-WA0005.jpg" alt="">
+         <h3>Serviço 4</h3>
+        <p>Descrição do Serviço 4</p>
+    </div>
+   </section>
 </body>
 </html>
