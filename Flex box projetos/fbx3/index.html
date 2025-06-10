@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 responsividade</title>
+    <style>
+        body{
+            margin: 0px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .servicos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .card {
+            flex: 1 1 calc(25% -1rem);
+            border: 1px solid #ccc;
+            border-radius:  5px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        @media  (max-width: 768px) {
+          .card {
+            flex: 1 1 100%;
+          }  
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="servicos">
+        <div class="card">
+            <h1>Card 1</h1>
+        </div>
+        <div class="card">
+            <h1>Card 2</h1>
+        </div>
+        <div class="card">
+            <h1>Card 3</h1>
+        </div>
+    </section>
+</body>
+</html>
