@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .galery {
+            display: flex;  
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .galery img {
+            display: flex;
+            border-radius: 5px;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(22, 228, 176, 0.1);
+
+        @media  (max-width:768px) {         
+        .galery img {
+          flex: 1 1 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="galery">
+        <img src="IMG-20250513-WA0005.jpg" alt="img1">
+        <img src="IMG-20250513-WA0005.jpg" alt="img1">
+        <img src="IMG-20250513-WA0005.jpg" alt="img1">
+    </section>
+</body>
+</html>

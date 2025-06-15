@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX1</title>
+    <style>
+        * {
+            padding: 10px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: blueviolet ;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .flex {
+            display: flex;
+            flex-flow: row wrap;
+           
+        }
+
+        .container {
+            flex: 1 1 200px;
+            background-color: aqua;
+            padding:10px ;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        @media (max-width:768px) {
+
+            
+        body {
+            background-color: blueviolet;
+           
+        }
+
+        .flex {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .container {
+            flex: 1 1 100px;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+    <div class="container"><img src="IMG-20250513-WA0005.jpg" alt=""></div>
+    <div class="container"><img src="IMG-20250513-WA0005.jpg" alt=""></div>
+    <div class="container"><img src="IMG-20250513-WA0005.jpg" alt=""></div>
+    <div class="container"><img src="IMG-20250513-WA0005.jpg" alt=""></div>
+    <div class="container"><img src="IMG-20250513-WA0005.jpg" alt=""></div>
+    <div class="container"><img src="IMG-20250513-WA0005.jpg" alt=""></div>
+    </div>
+</body>
+</html>
