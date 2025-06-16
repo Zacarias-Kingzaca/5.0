@@ -5,37 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
     <style>
+
         body {
-            margin: 0px;
             background-color: black;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+        } 
+        
 
-        .galery {
-            display: flex;  
-            flex-wrap: wrap;
-            gap: 1rem;
-            padding: 1rem;
-        }
-
-        .galery img {
+          .container {
             display: flex;
-            border-radius: 5px;
-            width: 100%;
-            box-shadow: 0 4px 6px rgba(22, 228, 176, 0.1);
+            flex-wrap: wrap;
+            justify-content: center;  
+            gap: 1rem;
+            padding: 2rem;
+           
+        }
 
-        @media  (max-width:768px) {         
-        .galery img {
-          flex: 1 1 100%;
+        .container img {
+            width: 200px;
+            height: auto;
+        }
+
+
+        
+
+        @media screen and (max-width: 500px) {
+
+        .container img {
+            width: 100px;
+            height: 250px;        
         }
         }
+
+          @media screen and (min-width: 501px) and (max-width: 600px) {
+     
+        
+        .container img {
+            width: 120px;
+            height: 250px;        
+        }
+        }
+
+          @media screen and (min-width: 601px) and (max-width: 700px) {
+          
+        .container img {
+            width: 150px;
+            height: 250px;        
+        }
+        }
+
+          @media screen and (min-width: 701px) and (max-width: 800px) {
+          
+        .container img {
+            width: 150px;
+            height: 250px;       
+        }
+        }
+
+          @media screen and (min-width: 801px) and (max-width: 850px) {
+          
+        .container img {
+            width: 180px;
+            height: 250px;       
+        }
+        }
+
+
     </style>
 </head>
 <body>
-    <section class="galery">
-        <img src="IMG-20250513-WA0005.jpg" alt="img1">
-        <img src="IMG-20250513-WA0005.jpg" alt="img1">
-        <img src="IMG-20250513-WA0005.jpg" alt="img1">
-    </section>
+
+        <div class="container">
+            <img src="IMG-20250513-WA0005.jpg" alt="img1">
+            <img src="IMG-20250513-WA0005.jpg" alt="img2">
+            <img src="IMG-20250513-WA0005.jpg" alt="img3">
+            <img src="IMG-20250513-WA0005.jpg" alt="img4">
+            <img src="IMG-20250513-WA0005.jpg" alt="img5">
+            <img src="IMG-20250513-WA0005.jpg" alt="img6">
+        </div>
+    
 </body>
 </html>
