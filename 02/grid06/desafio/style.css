@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template: 80px 40px 1fr 40px / 1fr 150px;
+    gap: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.caixa {
+    background-color: lightslategray;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#topo {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+
+#menu {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+}
+
+#main {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+#aside {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+}
+
+#pe {
+    grid-row: 4 / 5;
+    grid-column: 1 / 4 ;
+}
