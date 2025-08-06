@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        button {
+            background-color: blue;
+            padding: 10px;
+            margin: auto;
+            color: white;
+            font-size: 20;
+            font-weight: bold;
+            width: 500px;  
+            transition: background-color .4s ease-out;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: green;
+            cursor: pointer;
+        }
+
+        .di {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 4px;
+            transition:  0.3s ease-in-out;
+        }
+
+        .di:hover {
+            cursor: pointer;
+            width: 220px;
+            height: 220px;
+        }
+
+        .d {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            background-color: darkgray;
+            transition:  all 0.6s ease-in;
+        }
+
+        .d:active {
+            background-color: red;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button>Zacarias</button>
+
+    <div class="di"></div>
+    <div class="d"></div>
+</body>
+</html>

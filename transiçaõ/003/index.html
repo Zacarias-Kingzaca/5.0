@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.801);
+         
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;      
+        }
+        
+
+        button {
+            display: flex;
+            width: 90px;
+            height: 20px;
+            padding: 20px;
+            border-radius: 4px;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-weight: bold;
+            animation: crescer 2s infinite alternate;
+        }
+
+        @keyframes crescer {
+            0% {
+                scale: 1;
+            }
+            
+            100% {
+                scale: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div>
+     <button>
+        olá
+    </button>
+   </div>
+</body>
+</html>
