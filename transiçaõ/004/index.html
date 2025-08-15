@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girar</title>
+     <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: rgb(100, 119, 119);
+            }
+
+            .botao {
+                padding: 15px 100px;
+                cursor: pointer;
+                border-radius: 5px;
+                font-weight: bold;
+                animation: girar 2s linear infinite;
+                transition: transform 0.3s ease;
+            }
+
+            .botao:hover {
+                animation: none;
+                transform: rotate(0deg);
+                background-color: black;
+                color: white;
+            }
+
+            @keyframes girar {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+
+            
+      </style>
+</head>
+<body>
+    <button class="botao">Girar</button>
+</body>
+</html>

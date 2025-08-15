@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        body {
+            background-color: rgb(59, 59, 59);
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 10px 80px;
+            border-radius: 8px;
+            background-color: white;
+            font: bold;
+            cursor: pointer;
+            animation: girar 1.4s linear infinite;
+            transition: transform 2s ease;
+        }
+
+        button:hover {
+            animation: none;
+            transform: rotate(0deg);
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+
+        @keyframes girar {
+            from {
+              transform: rotate(0deg);
+            }
+
+            to {
+               transform:  rotate(368deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button>Girar</button>
+</body>
+</html>

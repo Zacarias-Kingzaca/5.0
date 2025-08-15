@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/celular.css">
+    <link rel="stylesheet" href="estilos/tablete.css">
+</head>
+<body>
+    <header class="navbar">
+       <h2>Hacker</h2>
+
+        <nav id="menu" class="menu">
+            <a href="#">Casa</a>
+            <a href="#">Sobre</a>
+            <a href="#">Projetos</a>
+            <a href="#">Contato</a>
+        </nav>
+
+         <div class="hamburguer" onclick="toggleMenu()">
+         &#9776
+        </div>
+    </header>
+
+    <section id="eu">
+        <div id="img">
+            <img src="img/hacking-2275592_640.jpg" alt="minha foto">
+            
+        </div>
+
+        <div id="intro">
+           <h3>Sejam Bem-Vindos</h3>
+           <p>Meu nome é Hacker, sou programadora e especialista em Cyber Segurança. Explorem o meu blogue e conheçam mais sobre os meus projectos.</p>
+        </div>
+    </section>
+
+    <h1 style="font-size: 26px;">Minhas Ablidades</h1>
+    <section id="ablidade"> 
+        <p>HTML</p>
+        <P>CSS</P>
+        <p>Java Script</p>
+        <P>Python</P>
+        <p>Hackin</p>
+        <p>Redes de Computadores</p>
+    </section>
+
+    <h1 id="h1proj">Projetos</h1>
+    <section id="proj">
+        <div>
+          <img src="img/redes.jpg" alt="">
+          <h2>Projeto de redes</h2>
+          Feito na Empresa ZacaIta
+          Com o apoio da Lá Mafia
+          <p>Saber mais</p>
+        </div>
+
+        <div>
+           <img src="img/php.jpg" alt="">
+            <h2>Projeto de programção</h2>
+            Feito na Empresa ZacaIta
+            Com o apoio da Lá Mafia
+            <p>Saber mais</p>
+        </div>
+    </section>
+
+    <h1>Projetos Futuros</h1>
+    <section id="proj1">
+        <div class="projimg">
+            <img src="img/sql.jpg" alt="">
+        </div>
+
+        <div class="projimg">
+            <img src="img/js.jpg" alt="">
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu(){
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('Show');
+        }
+    </script>
+
+    <footer> 
+        <h1>Terminou</h1>
+    </footer>
+</body>
+</html>

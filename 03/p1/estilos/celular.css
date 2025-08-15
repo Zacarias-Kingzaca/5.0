@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@media  (max-width:480px) {
+
+   :root {
+    --cor1: #0F1c2e; 
+    --cor2: #f9EEdc;
+    --cor3: #ffffff;
+    --cor4: #f0f0f0;
+    --cor5: #1a1a1a;
+   }
+
+   
+   header {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--cor1);
+      padding: 20px;
+      color: white;
+   }
+.menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      padding: 10px;
+      padding-top: 20px;
+      background-color: rgba(0, 0, 0, 0.555);
+      width: 50%;
+   }
+
+   .navbar nav a {
+      color: white;
+      font-size: 20px;
+    }
+
+   .menu.Show {
+      display: flex;
+   }
+
+   .hamburguer {
+      display: flex;
+      font-weight: bold;
+   }
+
+   #eu {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 30px;
+      box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.103);
+   }
+
+   #eu h3 {
+      color: var(--cor1);
+       font-size: 24px;
+   }
+
+   #eu p {
+      font-weight: bold;
+      font-size: 18px;
+      color: var(--cor5);
+   }
+
+   #eu img {
+      width: 100%;
+      border-radius: 100%;
+      box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.233);
+   }
+
+   #img {
+      background-color: #1a1a1a;
+      border-radius: 100%;
+   }
+
+   #ablidade {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+     
+   }
+
+   #ablidade p {
+      background-color: var(--cor2);
+      color: var(--cor5);
+      padding: 10px;
+      flex: 0 0 0px;
+      font-weight: bold;
+   }
+
+   h1 {
+      text-align: center;
+   }
+
+   #proj {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      box-shadow: 0px 10px 6px 0px rgba(0, 0, 0, 0.062); 
+   }
+
+   #proj img {
+      width: 100%;
+      
+   }
+
+   #proj p {
+      background-color: #0F1c2e;
+      padding: 10px;
+      color: #ffffff;
+      font-weight: bold;
+      width: 130px;
+      text-align: center;
+      border-radius: 4px;
+   }
+
+   #proj1 {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+   }
+
+   #proj1 img {
+      width: 100%;
+      box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.24);
+   }
+}
