@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @media  (min-width: 481px) and (max-width: 880px) {
-    
+  
    #eu {
       display: flex;
       flex-flow: row nowrap;
@@ -98,4 +98,23 @@
       box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.24);
       height: 170px;
    }
+
+   
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding-top: 150px;   
+}
+
+
+#input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 0px ;
+}
+
 }

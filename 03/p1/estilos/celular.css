@@ -11,22 +11,22 @@
    }
 
    
-   header {
-      display: flex;
-      flex-direction: column;
+   header {     
       background-color: var(--cor1);
       padding: 20px;
       color: white;
    }
+
+
 .menu {
       display: none;
       flex-direction: column;
       position: absolute;
       top: 0px;
-      right: 0px;
-      padding: 10px;
+      right: 150px;
+      padding: 13px;
       padding-top: 20px;
-      background-color: rgba(0, 0, 0, 0.555);
+      background-color: rgba(0, 0, 0, 0.897);
       width: 50%;
    }
 
@@ -40,6 +40,7 @@
    }
 
    .hamburguer {
+    
       display: flex;
       font-weight: bold;
    }
@@ -124,5 +125,52 @@
    #proj1 img {
       width: 100%;
       box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.24);
+   }
+
+
+   #form {
+      font-size: 22px;
+      color: #0F1c2e;
+      text-align: center;
+      font-weight: bold;
+      padding: 20px;
+   }
+
+   #input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 0px ;
+}
+
+   form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding-top: 0px;   
+}
+
+
+   input {
+      width: 100%;    
+   }
+
+   input:active {
+      border: 3px solid ;
+   }
+
+   button {
+      padding: 10px;
+      width: 90%;
+      margin-left: 14px;
+      margin-top:5px;
+      margin-bottom: 6px;
+      border-radius: 4px;
+   }
+
+   button:active {
+      background-color: var(--cor1);
    }
 }

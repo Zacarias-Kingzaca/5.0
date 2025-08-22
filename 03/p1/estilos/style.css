@@ -50,7 +50,7 @@ nav > a {
     padding: 10px;
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 nav > a:hover {
@@ -101,8 +101,8 @@ h1 {
 
 #ablidade {
     padding: 30px;
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px; 
 }
 
@@ -170,6 +170,57 @@ div {
 div:hover {
     transform: scale(1.06);
     cursor: pointer; 
+}
+
+#form {
+    font-size: 42px;
+    text-align: center;
+    margin: 14px;
+}
+
+form {
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin: 15px;
+    padding-top: 150px;   
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 250px ;
+}
+
+input {
+    background-color: #f0f0f050;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 6px;
+    font: 100;
+    font-size: 16px;
+    border:  1px solid black;
+    width: 306px;
+    margin: 4px;
+    transition: all background-color 0.3s;
+}
+
+    button {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #0f1c2ed0;
+    color: #f0f0f0;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all background-color 0.3s;
+    width: 300px;
+    margin: 6px;
+}
+
+button:hover {
+    background-color: var(--cor1);
+
 }
 
 footer {

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>  
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/celular.css">
+    <link rel="stylesheet" href="estilos/tablete.css">
+</head>
+<body>
+       <header class="navbar">
+       <h2>Hacker</h2>
+
+        <nav id="menu" class="menu">
+            <a href="#">Casa</a>
+            <a href="#">Sobre</a>
+            <a href="#">Projetos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+         <div class="hamburguer" onclick="toggleMenu()">
+         &#9776
+        </div>
+    </header>
+    <form action="#" method="post" autocomplete="on">
+          <p id="form">
+        Fale comigo! Terei o prazer em responder o mais rápido possível.
+    </p>
+    <section id="input">      
+        <input type="text" name="nome" id="nome" placeholder="Nome" minlength="2" required>
+        <input type="email" placeholder="E-mail" name="email" id="email" required >
+        <input type="text" placeholder="Assunto" name="assunto" id="assunto" required>
+        <input type="textarea" placeholder="Mensagem" name="mess" id="mess" required>
+        <button type="submit">Enviar</button>
+    </section>
+    </form>
+    <script>
+        function toggleMenu(){
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('Show');
+        }
+    </script>
+</body>
+</html>
