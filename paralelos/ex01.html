@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document01</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 30px;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            transition: color ease-in-out 0.3s;
+        }
+
+        nav a:hover {
+            color: aqua;
+            font-weight: bold;
+        }
+
+        section {
+            height: 100vh;
+            padding-top: 80px;
+        }
+
+        #inicio {
+            background-color: lightcoral;
+        }
+
+        #sobre {
+            background-color: lightseagreen;
+        }
+
+        #contato {
+            background-color: lightblue;
+        }
+
+        .topo {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #333;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="inicio">
+        <h1>Início</h1>
+    </section>
+
+    <section id="sobre">
+        <h1>Sobre</h1>
+    </section>
+
+    <section id="contato">
+        <h1>Contato</h1>
+    </section>
+
+    <a href="#inicio" class="topo">Topo</a>
+</body>
+</html>
