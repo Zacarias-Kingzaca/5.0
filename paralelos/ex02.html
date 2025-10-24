@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hambúrguer sem JS</title>
+
+    <style>
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            background-color: #222;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 10px;
+        }
+
+        #menu-toggle:checked + .menu-icon + .menu {
+            display: flex;
+        }
+
+        .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+            display: block;
+        }
+
+        @media (min-width: 568px) {
+            .menu {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .menu-icon {
+                display: none;
+            }
+
+            #menu-toggle {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776</label>
+    <nav class="menu">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviço</a>
+        <a href="#">Contato</a>
+    </nav>    
+</body>
+</html>

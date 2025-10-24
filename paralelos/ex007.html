@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgba(0, 0, 0, 0.767);
+        }
+
+        header {
+            background-color: transparent;
+            position: fixed;
+        }
+
+        .menu {
+            display: flex;
+            margin: 10px;
+        }
+
+        .menu a {
+            color: white;
+            margin: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: ease-in 0.3s;
+        }
+
+        .menu a:hover {
+            color: black;
+        }
+
+        section {
+            background-image: url(econnomia/oil-angola-3.jpg);
+            height: 500px;
+
+        }
+
+        .itens {
+            background-color: rgba(0, 0, 0, 0.582);
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            padding-top: 150px;
+            text-align: center;
+            color: white;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .pesquisa {
+            position: relative;
+            width: 600px;
+            display: flex;
+            margin: auto;
+        }
+
+        input {
+            width: 95%;
+            padding: 10px 30px 10px 10px;
+            font: normal 12pt arial ;
+            border-radius: 7px;
+            border: 1px solid black;
+            background-color: rgba(240, 248, 255, 0.849);
+        }
+
+        input:focus {
+            background-color: rgba(0, 0, 0, 0.336);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .lupa {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            font-size: 18px;
+        }
+
+
+     </style>
+
+</head>
+<body>
+    <header>
+    <nav class="menu">
+        <a href="#">Início</a>
+        <a href="#">Projeto</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+    </header>
+
+    <section>
+      
+      <div class="itens">
+        <h1>Seja Bem-Vindo ao meu site!</h1>
+        <div class="pesquisa">
+          <input type="text" name="Pesquisa" id="Pesquisa" placeholder="Pesquisa aqui...">
+          <span class="lupa">&#128269</span>
+        </div>
+  
+          <p>
+              Está página foi criada com o objetivo para você poder fazer pequisas.
+          </p>
+      </div>
+    </section>
+</body>
+</html>
